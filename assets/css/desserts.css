@@ -1,0 +1,90 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: system-ui;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #FCF8F6;
+}
+
+button {
+  border-radius: 50px;
+  border: solid 1px #AD8A85;
+  color: #260F08;
+  background-color: #FFFFFF;
+  width: 140px;
+  height: 40px;
+}
+
+.container {
+  width: 780px;
+  margin-inline: auto;
+  padding-block: 30px;
+  display: grid;
+  grid-template-columns: auto 200px;
+  gap: 30px;
+}
+
+.card-inner {
+  background-color: #fff;
+  position: sticky;
+  top: 30px;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#dessertList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 20px;
+}
+
+.dessert-item img {
+  /* width: 100%; */
+  /* eğer img içinde bulunduğu alandan küçük 
+  kalırsa alanı doldurması için 100% yapmalıyız */
+  border-radius: 6px;
+}
+
+.dessert-item button {
+  display: block;
+  padding-inline: 20px;
+  position: relative;
+  top: -10px;
+  margin-inline: auto;
+}
